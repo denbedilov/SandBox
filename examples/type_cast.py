@@ -1,4 +1,6 @@
-import generic_functions
+"""
+generic type check function
+"""
 
 
 def check_type(type, value):
@@ -10,10 +12,5 @@ def check_type(type, value):
 
 
 print(check_type('int', '33'))
-# print(check_type('str', 'str'))
-# print(check_type('str', 44))
-
-# print(getattr(generic_functions, 's1')(1))
-# print(getattr(generic_functions, 's2')(2))
-# print(getattr(generic_functions, 's3')(3))
-
+print(check_type('str', 'str'))
+print(check_type('str', 44))
