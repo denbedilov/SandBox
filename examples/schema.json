@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "structs": {
+        "ShortString": {
+            "description": "Short String",
+            "type": "string",
+            "pattern": ".*",
+            "minLength": 1,
+            "maxLength": 200
+        }
+    },
+    "schemas": {
+        "box_schema": {
+            "type": "object",
+            "properties": {
+                "box": {
+                    "$ref": "#/structs/ShortString"
+                }
+            },
+            "required": ["box"],
+            "additionalProperties": false
+        }
+    }
+}
